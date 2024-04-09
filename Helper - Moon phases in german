@@ -1,0 +1,10 @@
+{% set phase = states('sensor.moon_phase')  %}
+  {% if phase == 'last_quarter' %} Letztes Viertel
+  {% elif phase == 'waning_crescent' %} Abnehmende Sichel
+  {% elif phase == 'full_moon' %} Vollmond
+  {% elif phase == 'first_quarter' %} Erstes Viertel
+  {% elif phase == 'waxing_gibbous' %} Zunehmend
+  {% elif phase == 'new_moon' %} Neumond
+  {% elif phase == 'waning_gibbous' %} Abnehmend
+  {% elif phase == 'waxing_crescent' %} Zunehmende Sichel
+  {% endif %}
